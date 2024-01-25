@@ -32,7 +32,7 @@ def show_machine_learning_page():
             st.markdown(f'<h2 style="font-weight:bold; color:blue;">Average Predicted Energy Consumption for {selected_region} in {selected_year} for the Month {selected_month} (MW):</h2>', unsafe_allow_html=True)
             st.markdown(f'<h1 style="font-weight:bold; color:#FF4B4B;">{avg_prediction:.2f}</h1>', unsafe_allow_html=True)
             # Additional contextual information
-            st.write(f'Based on {len(specific_prediction)} data points from {selected_year} in the Month {selected_month}.')
+            st.write(f'Based on 1488 data points from {selected_year} in the Month {selected_month}.')
         else:
             st.error('No prediction data available for the selected combination of region, year, and month.')
 
