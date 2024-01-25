@@ -3,25 +3,29 @@ import pandas as pd
 
 # Load the predictions CSV
 all_predictions = pd.read_csv('all_predictions_modified.csv')
+future_predictions = pd.read_csv('future_predictions.csv')
 
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
     
-    selected_region = st.selectbox('Select a Region', all_predictions['Region'].unique())
+    # Combine both historical and future predictions data
+    combined_predictions = pd.concat([all_predictions, future_predictions], ignore_index=True)
+    
+    selected_region = st.selectbox('Select a Region', combined_predictions['Region'].unique())
     
     # Convert Year and Month to string if they are not
-    all_predictions['Year'] = all_predictions['Year'].astype(str)
-    all_predictions['Month'] = all_predictions['Month'].astype(str)
+    combined_predictions['Year'] = combined_predictions['Year'].astype(str)
+    combined_predictions['Month'] = combined_predictions['Month'].astype(str)
     
-    selected_year = st.selectbox('Select a Year', all_predictions[all_predictions['Region'] == selected_region]['Year'].unique())
-    selected_month = st.selectbox('Select a Month', all_predictions[(all_predictions['Region'] == selected_region) & (all_predictions['Year'] == selected_year)]['Month'].unique())
+    selected_year = st.selectbox('Select a Year', combined_predictions[combined_predictions['Region'] == selected_region]['Year'].unique())
+    selected_month = st.selectbox('Select a Month', combined_predictions[(combined_predictions['Region'] == selected_region) & (combined_predictions['Year'] == selected_year)]['Month'].unique())
     
     if st.button('Predict'):
         # Retrieve the specific prediction
-        specific_prediction = all_predictions[
-            (all_predictions['Region'] == selected_region) &
-            (all_predictions['Year'] == selected_year) &
-            (all_predictions['Month'] == selected_month)
+        specific_prediction = combined_predictions[
+            (combined_predictions['Region'] == selected_region) &
+            (combined_predictions['Year'] == selected_year) &
+            (combined_predictions['Month'] == selected_month)
         ]
         
         if not specific_prediction.empty:
@@ -31,10 +35,18 @@ def show_machine_learning_page():
             st.markdown('**Prediction made using pre-calculated data:**')
             st.markdown(f'<h2 style="font-weight:bold; color:blue;">Average Predicted Energy Consumption for {selected_region} in {selected_year} for the Month {selected_month} (MW):</h2>', unsafe_allow_html=True)
             st.markdown(f'<h1 style="font-weight:bold; color:#FF4B4B;">{avg_prediction:.2f}</h1>', unsafe_allow_html=True)
+            
             # Additional contextual information
-            st.write(f'Based on 1488 data points from {selected_year} in the Month {selected_month}.')
+            # Check if the prediction is for future dates
+            if pd.to_datetime(f'{selected_year}-{selected_month}-01') > pd.to_datetime('2022-05-01'):
+                st.write("Please note: The prediction for the selected period is based on projected trends, as the dataset available for analysis extends only up to May 2022. While this forecast is grounded in historical data patterns, it should be considered a reasoned estimate rather than a definitive figure.")
+            else:
+                st.write(f'Based on actual data points from {selected_year} in the Month {selected_month}.')
         else:
             st.error('No prediction data available for the selected combination of region, year, and month.')
+
+# The rest of your Streamlit code for other pages (show_home_page, show_authors_page, etc.)
+# ...
 
 def show_home_page():
     # Display the logo and introduction text
