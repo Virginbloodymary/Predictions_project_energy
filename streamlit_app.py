@@ -65,8 +65,9 @@ def show_home_page():
 
 def show_presentation_page():
     # Display the PDF from Google Drive in the browser
-    pdf_url = 'https://drive.google.com/file/d/1U_Sa2pgxGLxfM7DIRQpdrk6qUuK_cQ3c/preview'
+    pdf_url = 'https://drive.google.com/file/d/1Osx1id4x8g7FxwEY5tn6vc4lm88lqbE5/preview'
     st.markdown(f'# Presentation\n\n<iframe src="{pdf_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+
 
 
 
