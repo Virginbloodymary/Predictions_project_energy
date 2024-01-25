@@ -2,30 +2,26 @@ import streamlit as st
 import pandas as pd
 
 # Load the predictions CSV
-all_predictions = pd.read_csv('all_predictions_modified.csv')
-future_predictions = pd.read_csv('future_predictions.csv')
+predictions = pd.read_csv('predictions.csv')
 
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
     
-    # Combine both historical and future predictions data
-    combined_predictions = pd.concat([all_predictions, future_predictions], ignore_index=True)
-    
-    selected_region = st.selectbox('Select a Region', combined_predictions['Region'].unique())
+    selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
     
     # Convert Year and Month to string if they are not
-    combined_predictions['Year'] = combined_predictions['Year'].astype(str)
-    combined_predictions['Month'] = combined_predictions['Month'].astype(str)
+    predictions['Year'] = predictions['Year'].astype(str)
+    predictions['Month'] = predictions['Month'].astype(str)
     
-    selected_year = st.selectbox('Select a Year', combined_predictions[combined_predictions['Region'] == selected_region]['Year'].unique())
-    selected_month = st.selectbox('Select a Month', combined_predictions[(combined_predictions['Region'] == selected_region) & (combined_predictions['Year'] == selected_year)]['Month'].unique())
+    selected_year = st.selectbox('Select a Year', predictions[predictions['Region'] == selected_region]['Year'].unique())
+    selected_month = st.selectbox('Select a Month', predictions[(predictions['Region'] == selected_region) & (predictions['Year'] == selected_year)]['Month'].unique())
     
     if st.button('Predict'):
         # Retrieve the specific prediction
-        specific_prediction = combined_predictions[
-            (combined_predictions['Region'] == selected_region) &
-            (combined_predictions['Year'] == selected_year) &
-            (combined_predictions['Month'] == selected_month)
+        specific_prediction = predictions[
+            (predictions['Region'] == selected_region) &
+            (predictions['Year'] == selected_year) &
+            (predictions['Month'] == selected_month)
         ]
         
         if not specific_prediction.empty:
@@ -44,9 +40,6 @@ def show_machine_learning_page():
                 st.write(f'Based on actual data points from {selected_year} in the Month {selected_month}.')
         else:
             st.error('No prediction data available for the selected combination of region, year, and month.')
-
-# The rest of your Streamlit code for other pages (show_home_page, show_authors_page, etc.)
-# ...
 
 def show_home_page():
     # Display the logo and introduction text
@@ -79,10 +72,6 @@ def show_presentation_page():
     # Display the PDF from Google Drive in the browser
     pdf_url = 'https://drive.google.com/file/d/1Osx1id4x8g7FxwEY5tn6vc4lm88lqbE5/preview'
     st.markdown(f'# Presentation\n\n<iframe src="{pdf_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
-
-
-
-
 
 def show_authors_page():
     # Display authors and LinkedIn links
