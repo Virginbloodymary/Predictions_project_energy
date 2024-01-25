@@ -33,13 +33,8 @@ def show_machine_learning_page():
             st.markdown(f'<h1 style="font-weight:bold; color:#FF4B4B;">{avg_prediction:.2f}</h1>', unsafe_allow_html=True)
             # Additional contextual information
             st.write(f'Based on 1488 data points from {selected_year} in the Month {selected_month}.')
-
         else:
             st.error('No prediction data available for the selected combination of region, year, and month.')
-
-# Display the link to the PDF on the Machine Learning page
-pdf_url = 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy_Final_Draft.pdf'
-st.markdown(f'[View Presentation]({pdf_url})', unsafe_allow_html=True)
 
 def show_home_page():
     # Display the logo and introduction text
@@ -68,6 +63,11 @@ def show_home_page():
         """
     )
 
+def show_presentation_page():
+    # Display a link to open the presentation in the browser
+    pdf_url = 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy_Final_Draft.pdf'
+    st.markdown(f'# Presentation\n\n[Open Presentation in Browser]({pdf_url})', unsafe_allow_html=True)
+
 def show_authors_page():
     # Display authors and LinkedIn links
     st.title('Authors')
@@ -83,8 +83,7 @@ def show_authors_page():
     """)
 
 # Set page configuration
-#st.set_page_config(page_title="Energy Consumption Predictions", page_icon="\U0001F4A8", layout="wide")
-
+st.set_page_config(page_title="Energy Consumption Predictions", page_icon=":zap:", layout="wide")
 
 if 'already_called' not in st.session_state:
     st.session_state['already_called'] = True
@@ -100,6 +99,8 @@ if st.sidebar.button('Energy Project'):
     set_page('Energy Project')
 if st.sidebar.button('Machine Learning'):
     set_page('Machine Learning')
+if st.sidebar.button('Presentation'):
+    set_page('Presentation')
 if st.sidebar.button('Authors'):
     set_page('Authors')
 
@@ -108,5 +109,7 @@ if st.session_state['current_page'] == 'Energy Project':
     show_home_page()
 elif st.session_state['current_page'] == 'Machine Learning':
     show_machine_learning_page()  
+elif st.session_state['current_page'] == 'Presentation':
+    show_presentation_page()
 elif st.session_state['current_page'] == 'Authors':
     show_authors_page()
