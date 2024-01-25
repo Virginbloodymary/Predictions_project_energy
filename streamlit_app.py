@@ -65,7 +65,7 @@ def show_home_page():
 
 def show_presentation_page():
     # Display a link to open the presentation in the browser
-    pdf_url = 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy_Final_Draft.pdf'
+    pdf_url = 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy.pdf'
     st.markdown(f'# Presentation\n\n[Open Presentation in Browser]({pdf_url}?#view=FitH)', unsafe_allow_html=True)
 
 
