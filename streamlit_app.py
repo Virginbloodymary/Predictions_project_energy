@@ -64,9 +64,10 @@ def show_home_page():
     )
 
 def show_presentation_page():
-    # Display a link to open the presentation in the browser
-    pdf_url = 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy.pdf'
-    st.markdown(f'# Presentation\n\n[Open Presentation in Browser]({pdf_url}?#view=FitH)', unsafe_allow_html=True)
+    # Display the PDF in the browser without downloading
+    pdf_url = 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy.pdf'
+    st.markdown(f'# Presentation\n\n<iframe src="{pdf_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+
 
 
 def show_authors_page():
