@@ -64,9 +64,10 @@ def show_home_page():
     )
 
 def show_presentation_page():
-    # Display the PDF in the browser without downloading
-    pdf_url = 'https://docs.google.com/viewer?url=https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy.pdf'
+    # Display the PDF from Google Drive in the browser
+    pdf_url = 'https://drive.google.com/file/d/1U_Sa2pgxGLxfM7DIRQpdrk6qUuK_cQ3c/preview'
     st.markdown(f'# Presentation\n\n<iframe src="{pdf_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+
 
 
 
