@@ -83,7 +83,7 @@ def show_authors_page():
     """)
 
 # Set page configuration
-st.set_page_config(page_title="Energy Consumption Predictions", page_icon="\U0001F4A8", layout="wide")
+#st.set_page_config(page_title="Energy Consumption Predictions", page_icon="\U0001F4A8", layout="wide")
 
 
 if 'already_called' not in st.session_state:
