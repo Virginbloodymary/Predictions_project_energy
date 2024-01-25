@@ -1,0 +1,433 @@
+Year,Month,Region,PredictedEnergyConsumption
+2023,January,Bourgogne-Franche-Comté,3114.103748297284
+2023,February,Bourgogne-Franche-Comté,3023.451590855313
+2023,March,Bourgogne-Franche-Comté,2670.3582489649666
+2023,April,Bourgogne-Franche-Comté,2307.9863872522515
+2023,May,Bourgogne-Franche-Comté,2109.903990762467
+2023,June,Bourgogne-Franche-Comté,2017.5909742440745
+2023,July,Bourgogne-Franche-Comté,2017.5909742440745
+2023,August,Bourgogne-Franche-Comté,2002.0415465906487
+2023,September,Bourgogne-Franche-Comté,2002.0415465906487
+2023,October,Bourgogne-Franche-Comté,2342.777719854172
+2023,November,Bourgogne-Franche-Comté,2726.880174945745
+2023,December,Bourgogne-Franche-Comté,2907.0951883459807
+2024,January,Bourgogne-Franche-Comté,3114.103748297284
+2024,February,Bourgogne-Franche-Comté,3023.451590855313
+2024,March,Bourgogne-Franche-Comté,2670.3582489649666
+2024,April,Bourgogne-Franche-Comté,2307.9863872522515
+2024,May,Bourgogne-Franche-Comté,2109.903990762467
+2024,June,Bourgogne-Franche-Comté,2017.5909742440745
+2024,July,Bourgogne-Franche-Comté,2017.5909742440745
+2024,August,Bourgogne-Franche-Comté,2002.0415465906487
+2024,September,Bourgogne-Franche-Comté,2002.0415465906487
+2024,October,Bourgogne-Franche-Comté,2342.777719854172
+2024,November,Bourgogne-Franche-Comté,2726.880174945745
+2024,December,Bourgogne-Franche-Comté,2907.0951883459807
+2025,January,Bourgogne-Franche-Comté,3114.103748297284
+2025,February,Bourgogne-Franche-Comté,3023.451590855313
+2025,March,Bourgogne-Franche-Comté,2670.3582489649666
+2025,April,Bourgogne-Franche-Comté,2307.9863872522515
+2025,May,Bourgogne-Franche-Comté,2109.903990762467
+2025,June,Bourgogne-Franche-Comté,2017.5909742440745
+2025,July,Bourgogne-Franche-Comté,2017.5909742440745
+2025,August,Bourgogne-Franche-Comté,2002.0415465906487
+2025,September,Bourgogne-Franche-Comté,2002.0415465906487
+2025,October,Bourgogne-Franche-Comté,2342.777719854172
+2025,November,Bourgogne-Franche-Comté,2726.880174945745
+2025,December,Bourgogne-Franche-Comté,2907.0951883459807
+2023,January,Normandie,4104.179871218878
+2023,February,Normandie,4024.189939521062
+2023,March,Normandie,3638.1977406182823
+2023,April,Normandie,3100.579448157723
+2023,May,Normandie,2721.7516810890334
+2023,June,Normandie,2537.7885053951013
+2023,July,Normandie,2537.7885053951013
+2023,August,Normandie,2537.7885053951013
+2023,September,Normandie,2654.065267344887
+2023,October,Normandie,2976.7774241863976
+2023,November,Normandie,3556.5874799871945
+2023,December,Normandie,3821.870609227888
+2024,January,Normandie,4104.179871218878
+2024,February,Normandie,4024.189939521062
+2024,March,Normandie,3638.1977406182823
+2024,April,Normandie,3100.579448157723
+2024,May,Normandie,2721.7516810890334
+2024,June,Normandie,2537.7885053951013
+2024,July,Normandie,2537.7885053951013
+2024,August,Normandie,2537.7885053951013
+2024,September,Normandie,2654.065267344887
+2024,October,Normandie,2976.7774241863976
+2024,November,Normandie,3556.5874799871945
+2024,December,Normandie,3821.870609227888
+2025,January,Normandie,4104.179871218878
+2025,February,Normandie,4024.189939521062
+2025,March,Normandie,3638.1977406182823
+2025,April,Normandie,3100.579448157723
+2025,May,Normandie,2721.7516810890334
+2025,June,Normandie,2537.7885053951013
+2025,July,Normandie,2537.7885053951013
+2025,August,Normandie,2537.7885053951013
+2025,September,Normandie,2654.065267344887
+2025,October,Normandie,2976.7774241863976
+2025,November,Normandie,3556.5874799871945
+2025,December,Normandie,3821.870609227888
+2023,January,Île-de-France,10606.003143590007
+2023,February,Île-de-France,10190.466461334334
+2023,March,Île-de-France,9105.280224457809
+2023,April,Île-de-France,7586.595069218033
+2023,May,Île-de-France,6871.736890567463
+2023,June,Île-de-France,6626.013206297329
+2023,July,Île-de-France,6408.562461686733
+2023,August,Île-de-France,5819.990805250312
+2023,September,Île-de-France,6647.078744024097
+2023,October,Île-de-France,7575.086041873155
+2023,November,Île-de-France,9176.09457813264
+2023,December,Île-de-France,9919.639606683952
+2024,January,Île-de-France,10606.003143590007
+2024,February,Île-de-France,10190.466461334334
+2024,March,Île-de-France,9105.280224457809
+2024,April,Île-de-France,7586.595069218033
+2024,May,Île-de-France,6871.736890567463
+2024,June,Île-de-France,6626.013206297329
+2024,July,Île-de-France,6408.562461686733
+2024,August,Île-de-France,5819.990805250312
+2024,September,Île-de-France,6647.078744024097
+2024,October,Île-de-France,7575.086041873155
+2024,November,Île-de-France,9176.09457813264
+2024,December,Île-de-France,9919.639606683952
+2025,January,Île-de-France,10606.003143590007
+2025,February,Île-de-France,10190.466461334334
+2025,March,Île-de-France,9105.280224457809
+2025,April,Île-de-France,7586.595069218033
+2025,May,Île-de-France,6871.736890567463
+2025,June,Île-de-France,6626.013206297329
+2025,July,Île-de-France,6408.562461686733
+2025,August,Île-de-France,5819.990805250312
+2025,September,Île-de-France,6647.078744024097
+2025,October,Île-de-France,7575.086041873155
+2025,November,Île-de-France,9176.09457813264
+2025,December,Île-de-France,9919.639606683952
+2023,January,Bretagne,3378.709815688144
+2023,February,Bretagne,3302.5707261887874
+2023,March,Bretagne,2972.3536290539805
+2023,April,Bretagne,2469.7672466538843
+2023,May,Bretagne,2109.903990762467
+2023,June,Bretagne,2017.5909742440745
+2023,July,Bretagne,2017.5909742440745
+2023,August,Bretagne,2002.0415465906487
+2023,September,Bretagne,2002.0415465906487
+2023,October,Bretagne,2335.777865381172
+2023,November,Bretagne,2822.927975607751
+2023,December,Bretagne,3141.7236687580275
+2024,January,Bretagne,3378.709815688144
+2024,February,Bretagne,3302.5707261887874
+2024,March,Bretagne,2972.3536290539805
+2024,April,Bretagne,2469.7672466538843
+2024,May,Bretagne,2109.903990762467
+2024,June,Bretagne,2017.5909742440745
+2024,July,Bretagne,2017.5909742440745
+2024,August,Bretagne,2002.0415465906487
+2024,September,Bretagne,2002.0415465906487
+2024,October,Bretagne,2335.777865381172
+2024,November,Bretagne,2822.927975607751
+2024,December,Bretagne,3141.7236687580275
+2025,January,Bretagne,3378.709815688144
+2025,February,Bretagne,3302.5707261887874
+2025,March,Bretagne,2972.3536290539805
+2025,April,Bretagne,2469.7672466538843
+2025,May,Bretagne,2109.903990762467
+2025,June,Bretagne,2017.5909742440745
+2025,July,Bretagne,2017.5909742440745
+2025,August,Bretagne,2002.0415465906487
+2025,September,Bretagne,2002.0415465906487
+2025,October,Bretagne,2335.777865381172
+2025,November,Bretagne,2822.927975607751
+2025,December,Bretagne,3141.7236687580275
+2023,January,Nouvelle-Aquitaine,6511.057667622085
+2023,February,Nouvelle-Aquitaine,6198.8956759164685
+2023,March,Nouvelle-Aquitaine,5447.138559490759
+2023,April,Nouvelle-Aquitaine,4605.8684095536455
+2023,May,Nouvelle-Aquitaine,4135.681917144037
+2023,June,Nouvelle-Aquitaine,4025.587758745801
+2023,July,Nouvelle-Aquitaine,4253.804442964551
+2023,August,Nouvelle-Aquitaine,4079.648806078984
+2023,September,Nouvelle-Aquitaine,4104.300571213425
+2023,October,Nouvelle-Aquitaine,4411.461735597272
+2023,November,Nouvelle-Aquitaine,5493.234147597636
+2023,December,Nouvelle-Aquitaine,6068.74339008263
+2024,January,Nouvelle-Aquitaine,6511.057667622085
+2024,February,Nouvelle-Aquitaine,6198.8956759164685
+2024,March,Nouvelle-Aquitaine,5447.138559490759
+2024,April,Nouvelle-Aquitaine,4605.8684095536455
+2024,May,Nouvelle-Aquitaine,4135.681917144037
+2024,June,Nouvelle-Aquitaine,4025.587758745801
+2024,July,Nouvelle-Aquitaine,4253.804442964551
+2024,August,Nouvelle-Aquitaine,4079.648806078984
+2024,September,Nouvelle-Aquitaine,4104.300571213425
+2024,October,Nouvelle-Aquitaine,4411.461735597272
+2024,November,Nouvelle-Aquitaine,5493.234147597636
+2024,December,Nouvelle-Aquitaine,6068.74339008263
+2025,January,Nouvelle-Aquitaine,6511.057667622085
+2025,February,Nouvelle-Aquitaine,6198.8956759164685
+2025,March,Nouvelle-Aquitaine,5447.138559490759
+2025,April,Nouvelle-Aquitaine,4605.8684095536455
+2025,May,Nouvelle-Aquitaine,4135.681917144037
+2025,June,Nouvelle-Aquitaine,4025.587758745801
+2025,July,Nouvelle-Aquitaine,4253.804442964551
+2025,August,Nouvelle-Aquitaine,4079.648806078984
+2025,September,Nouvelle-Aquitaine,4104.300571213425
+2025,October,Nouvelle-Aquitaine,4411.461735597272
+2025,November,Nouvelle-Aquitaine,5493.234147597636
+2025,December,Nouvelle-Aquitaine,6068.74339008263
+2023,January,Hauts-de-France,7184.6707568862585
+2023,February,Hauts-de-France,6985.444852396156
+2023,March,Hauts-de-France,6338.613113563488
+2023,April,Hauts-de-France,5541.180010932987
+2023,May,Hauts-de-France,5098.515417109357
+2023,June,Hauts-de-France,4953.447012665079
+2023,July,Hauts-de-France,4845.563780940876
+2023,August,Hauts-de-France,4468.1423229186485
+2023,September,Hauts-de-France,5076.508748986488
+2023,October,Hauts-de-France,5584.216187037166
+2023,November,Hauts-de-France,6399.682200342229
+2023,December,Hauts-de-France,6662.868078737993
+2024,January,Hauts-de-France,7184.6707568862585
+2024,February,Hauts-de-France,6985.444852396156
+2024,March,Hauts-de-France,6338.613113563488
+2024,April,Hauts-de-France,5541.180010932987
+2024,May,Hauts-de-France,5098.515417109357
+2024,June,Hauts-de-France,4953.447012665079
+2024,July,Hauts-de-France,4845.563780940876
+2024,August,Hauts-de-France,4468.1423229186485
+2024,September,Hauts-de-France,5076.508748986488
+2024,October,Hauts-de-France,5584.216187037166
+2024,November,Hauts-de-France,6399.682200342229
+2024,December,Hauts-de-France,6662.868078737993
+2025,January,Hauts-de-France,7184.6707568862585
+2025,February,Hauts-de-France,6985.444852396156
+2025,March,Hauts-de-France,6338.613113563488
+2025,April,Hauts-de-France,5541.180010932987
+2025,May,Hauts-de-France,5098.515417109357
+2025,June,Hauts-de-France,4953.447012665079
+2025,July,Hauts-de-France,4845.563780940876
+2025,August,Hauts-de-France,4468.1423229186485
+2025,September,Hauts-de-France,5076.508748986488
+2025,October,Hauts-de-France,5584.216187037166
+2025,November,Hauts-de-France,6399.682200342229
+2025,December,Hauts-de-France,6662.868078737993
+2023,January,Auvergne-Rhône-Alpes,9658.298643721631
+2023,February,Auvergne-Rhône-Alpes,9280.611822971285
+2023,March,Auvergne-Rhône-Alpes,8293.025744818078
+2023,April,Auvergne-Rhône-Alpes,7134.355612729409
+2023,May,Auvergne-Rhône-Alpes,6480.390712120203
+2023,June,Auvergne-Rhône-Alpes,6412.555534456868
+2023,July,Auvergne-Rhône-Alpes,6474.660018049715
+2023,August,Auvergne-Rhône-Alpes,5882.405387027635
+2023,September,Auvergne-Rhône-Alpes,6423.627826726641
+2023,October,Auvergne-Rhône-Alpes,7006.479469252253
+2023,November,Auvergne-Rhône-Alpes,8212.62918922887
+2023,December,Auvergne-Rhône-Alpes,9005.501237485585
+2024,January,Auvergne-Rhône-Alpes,9658.298643721631
+2024,February,Auvergne-Rhône-Alpes,9280.611822971285
+2024,March,Auvergne-Rhône-Alpes,8293.025744818078
+2024,April,Auvergne-Rhône-Alpes,7134.355612729409
+2024,May,Auvergne-Rhône-Alpes,6480.390712120203
+2024,June,Auvergne-Rhône-Alpes,6412.555534456868
+2024,July,Auvergne-Rhône-Alpes,6474.660018049715
+2024,August,Auvergne-Rhône-Alpes,5882.405387027635
+2024,September,Auvergne-Rhône-Alpes,6423.627826726641
+2024,October,Auvergne-Rhône-Alpes,7006.479469252253
+2024,November,Auvergne-Rhône-Alpes,8212.62918922887
+2024,December,Auvergne-Rhône-Alpes,9005.501237485585
+2025,January,Auvergne-Rhône-Alpes,9658.298643721631
+2025,February,Auvergne-Rhône-Alpes,9280.611822971285
+2025,March,Auvergne-Rhône-Alpes,8293.025744818078
+2025,April,Auvergne-Rhône-Alpes,7134.355612729409
+2025,May,Auvergne-Rhône-Alpes,6480.390712120203
+2025,June,Auvergne-Rhône-Alpes,6412.555534456868
+2025,July,Auvergne-Rhône-Alpes,6474.660018049715
+2025,August,Auvergne-Rhône-Alpes,5882.405387027635
+2025,September,Auvergne-Rhône-Alpes,6423.627826726641
+2025,October,Auvergne-Rhône-Alpes,7006.479469252253
+2025,November,Auvergne-Rhône-Alpes,8212.62918922887
+2025,December,Auvergne-Rhône-Alpes,9005.501237485585
+2023,January,Grand Est,6387.60762973606
+2023,February,Grand Est,6297.254927961023
+2023,March,Grand Est,5705.528703781407
+2023,April,Grand Est,4938.864449470717
+2023,May,Grand Est,4517.5239235277495
+2023,June,Grand Est,4513.17998686144
+2023,July,Grand Est,4437.68360115214
+2023,August,Grand Est,4012.943778835931
+2023,September,Grand Est,4571.730009647713
+2023,October,Grand Est,5101.657530650304
+2023,November,Grand Est,5798.012388738686
+2023,December,Grand Est,5971.501359323034
+2024,January,Grand Est,6387.60762973606
+2024,February,Grand Est,6297.254927961023
+2024,March,Grand Est,5705.528703781407
+2024,April,Grand Est,4938.864449470717
+2024,May,Grand Est,4517.5239235277495
+2024,June,Grand Est,4513.17998686144
+2024,July,Grand Est,4437.68360115214
+2024,August,Grand Est,4012.943778835931
+2024,September,Grand Est,4571.730009647713
+2024,October,Grand Est,5101.657530650304
+2024,November,Grand Est,5798.012388738686
+2024,December,Grand Est,5971.501359323034
+2025,January,Grand Est,6387.60762973606
+2025,February,Grand Est,6297.254927961023
+2025,March,Grand Est,5705.528703781407
+2025,April,Grand Est,4938.864449470717
+2025,May,Grand Est,4517.5239235277495
+2025,June,Grand Est,4513.17998686144
+2025,July,Grand Est,4437.68360115214
+2025,August,Grand Est,4012.943778835931
+2025,September,Grand Est,4571.730009647713
+2025,October,Grand Est,5101.657530650304
+2025,November,Grand Est,5798.012388738686
+2025,December,Grand Est,5971.501359323034
+2023,January,Provence-Alpes-Côte d'Azur,5963.067149681487
+2023,February,Provence-Alpes-Côte d'Azur,5702.372346238302
+2023,March,Provence-Alpes-Côte d'Azur,5036.028243238058
+2023,April,Provence-Alpes-Côte d'Azur,4287.4261862504845
+2023,May,Provence-Alpes-Côte d'Azur,3897.7882657687583
+2023,June,Provence-Alpes-Côte d'Azur,3993.593228785168
+2023,July,Provence-Alpes-Côte d'Azur,4342.439342912701
+2023,August,Provence-Alpes-Côte d'Azur,4181.244563894065
+2023,September,Provence-Alpes-Côte d'Azur,4003.444400149493
+2023,October,Provence-Alpes-Côte d'Azur,4055.706649300304
+2023,November,Provence-Alpes-Côte d'Azur,4935.436978945752
+2023,December,Provence-Alpes-Côte d'Azur,5625.463193045252
+2024,January,Provence-Alpes-Côte d'Azur,5963.067149681487
+2024,February,Provence-Alpes-Côte d'Azur,5702.372346238302
+2024,March,Provence-Alpes-Côte d'Azur,5036.028243238058
+2024,April,Provence-Alpes-Côte d'Azur,4287.4261862504845
+2024,May,Provence-Alpes-Côte d'Azur,3897.7882657687583
+2024,June,Provence-Alpes-Côte d'Azur,3993.593228785168
+2024,July,Provence-Alpes-Côte d'Azur,4342.439342912701
+2024,August,Provence-Alpes-Côte d'Azur,4181.244563894065
+2024,September,Provence-Alpes-Côte d'Azur,4003.444400149493
+2024,October,Provence-Alpes-Côte d'Azur,4055.706649300304
+2024,November,Provence-Alpes-Côte d'Azur,4935.436978945752
+2024,December,Provence-Alpes-Côte d'Azur,5625.463193045252
+2025,January,Provence-Alpes-Côte d'Azur,5963.067149681487
+2025,February,Provence-Alpes-Côte d'Azur,5702.372346238302
+2025,March,Provence-Alpes-Côte d'Azur,5036.028243238058
+2025,April,Provence-Alpes-Côte d'Azur,4287.4261862504845
+2025,May,Provence-Alpes-Côte d'Azur,3897.7882657687583
+2025,June,Provence-Alpes-Côte d'Azur,3993.593228785168
+2025,July,Provence-Alpes-Côte d'Azur,4342.439342912701
+2025,August,Provence-Alpes-Côte d'Azur,4181.244563894065
+2025,September,Provence-Alpes-Côte d'Azur,4003.444400149493
+2025,October,Provence-Alpes-Côte d'Azur,4055.706649300304
+2025,November,Provence-Alpes-Côte d'Azur,4935.436978945752
+2025,December,Provence-Alpes-Côte d'Azur,5625.463193045252
+2023,January,Occitanie,5788.1556241848975
+2023,February,Occitanie,5344.291881417867
+2023,March,Occitanie,4667.219494153682
+2023,April,Occitanie,3936.139734324111
+2023,May,Occitanie,3494.9229925296136
+2023,June,Occitanie,3481.821897026041
+2023,July,Occitanie,3793.624630847068
+2023,August,Occitanie,3614.3281756198426
+2023,September,Occitanie,3532.3980773534668
+2023,October,Occitanie,3705.985902419021
+2023,November,Occitanie,4664.25073596317
+2023,December,Occitanie,5383.351503761707
+2024,January,Occitanie,5788.1556241848975
+2024,February,Occitanie,5344.291881417867
+2024,March,Occitanie,4667.219494153682
+2024,April,Occitanie,3936.139734324111
+2024,May,Occitanie,3494.9229925296136
+2024,June,Occitanie,3481.821897026041
+2024,July,Occitanie,3793.624630847068
+2024,August,Occitanie,3614.3281756198426
+2024,September,Occitanie,3532.3980773534668
+2024,October,Occitanie,3705.985902419021
+2024,November,Occitanie,4664.25073596317
+2024,December,Occitanie,5383.351503761707
+2025,January,Occitanie,5788.1556241848975
+2025,February,Occitanie,5344.291881417867
+2025,March,Occitanie,4667.219494153682
+2025,April,Occitanie,3936.139734324111
+2025,May,Occitanie,3494.9229925296136
+2025,June,Occitanie,3481.821897026041
+2025,July,Occitanie,3793.624630847068
+2025,August,Occitanie,3614.3281756198426
+2025,September,Occitanie,3532.3980773534668
+2025,October,Occitanie,3705.985902419021
+2025,November,Occitanie,4664.25073596317
+2025,December,Occitanie,5383.351503761707
+2023,January,Pays de la Loire,4073.0576895108297
+2023,February,Pays de la Loire,3950.401425667494
+2023,March,Pays de la Loire,3511.163883231582
+2023,April,Pays de la Loire,2939.502440574577
+2023,May,Pays de la Loire,2547.259472259204
+2023,June,Pays de la Loire,2547.259472259204
+2023,July,Pays de la Loire,2547.259472259204
+2023,August,Pays de la Loire,2430.816782575005
+2023,September,Pays de la Loire,2430.816782575005
+2023,October,Pays de la Loire,2815.3120498010103
+2023,November,Pays de la Loire,3457.4440967537453
+2023,December,Pays de la Loire,3787.461359244488
+2024,January,Pays de la Loire,4073.0576895108297
+2024,February,Pays de la Loire,3950.401425667494
+2024,March,Pays de la Loire,3511.163883231582
+2024,April,Pays de la Loire,2939.502440574577
+2024,May,Pays de la Loire,2547.259472259204
+2024,June,Pays de la Loire,2547.259472259204
+2024,July,Pays de la Loire,2547.259472259204
+2024,August,Pays de la Loire,2430.816782575005
+2024,September,Pays de la Loire,2430.816782575005
+2024,October,Pays de la Loire,2815.3120498010103
+2024,November,Pays de la Loire,3457.4440967537453
+2024,December,Pays de la Loire,3787.461359244488
+2025,January,Pays de la Loire,4073.0576895108297
+2025,February,Pays de la Loire,3950.401425667494
+2025,March,Pays de la Loire,3511.163883231582
+2025,April,Pays de la Loire,2939.502440574577
+2025,May,Pays de la Loire,2547.259472259204
+2025,June,Pays de la Loire,2547.259472259204
+2025,July,Pays de la Loire,2547.259472259204
+2025,August,Pays de la Loire,2430.816782575005
+2025,September,Pays de la Loire,2430.816782575005
+2025,October,Pays de la Loire,2815.3120498010103
+2025,November,Pays de la Loire,3457.4440967537453
+2025,December,Pays de la Loire,3787.461359244488
+2023,January,Centre-Val de Loire,2892.356279972068
+2023,February,Centre-Val de Loire,2805.0424839154894
+2023,March,Centre-Val de Loire,2456.015605105965
+2023,April,Centre-Val de Loire,2027.193091873564
+2023,May,Centre-Val de Loire,1773.5569650386344
+2023,June,Centre-Val de Loire,1698.5566572848634
+2023,July,Centre-Val de Loire,1729.411641416984
+2023,August,Centre-Val de Loire,1619.1410590119756
+2023,September,Centre-Val de Loire,1726.782832878651
+2023,October,Centre-Val de Loire,1951.715848929129
+2023,November,Centre-Val de Loire,2423.770245856296
+2023,December,Centre-Val de Loire,2710.698425074207
+2024,January,Centre-Val de Loire,2892.356279972068
+2024,February,Centre-Val de Loire,2805.0424839154894
+2024,March,Centre-Val de Loire,2456.015605105965
+2024,April,Centre-Val de Loire,2027.193091873564
+2024,May,Centre-Val de Loire,1773.5569650386344
+2024,June,Centre-Val de Loire,1698.5566572848634
+2024,July,Centre-Val de Loire,1729.411641416984
+2024,August,Centre-Val de Loire,1619.1410590119756
+2024,September,Centre-Val de Loire,1726.782832878651
+2024,October,Centre-Val de Loire,1951.715848929129
+2024,November,Centre-Val de Loire,2423.770245856296
+2024,December,Centre-Val de Loire,2710.698425074207
+2025,January,Centre-Val de Loire,2892.356279972068
+2025,February,Centre-Val de Loire,2805.0424839154894
+2025,March,Centre-Val de Loire,2456.015605105965
+2025,April,Centre-Val de Loire,2027.193091873564
+2025,May,Centre-Val de Loire,1773.5569650386344
+2025,June,Centre-Val de Loire,1698.5566572848634
+2025,July,Centre-Val de Loire,1729.411641416984
+2025,August,Centre-Val de Loire,1619.1410590119756
+2025,September,Centre-Val de Loire,1726.782832878651
+2025,October,Centre-Val de Loire,1951.715848929129
+2025,November,Centre-Val de Loire,2423.770245856296
+2025,December,Centre-Val de Loire,2710.698425074207
