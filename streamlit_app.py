@@ -33,8 +33,13 @@ def show_machine_learning_page():
             st.markdown(f'<h1 style="font-weight:bold; color:#FF4B4B;">{avg_prediction:.2f}</h1>', unsafe_allow_html=True)
             # Additional contextual information
             st.write(f'Based on 1488 data points from {selected_year} in the Month {selected_month}.')
+
         else:
             st.error('No prediction data available for the selected combination of region, year, and month.')
+
+# Display the link to the PDF on the Machine Learning page
+pdf_url = 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/Presentation_Project_Energy_Final_Draft.pdf'
+st.markdown(f'[View Presentation]({pdf_url})', unsafe_allow_html=True)
 
 def show_home_page():
     # Display the logo and introduction text
