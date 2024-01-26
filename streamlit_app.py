@@ -72,7 +72,6 @@ def show_download_link():
     # Link to the file for downloading
     download_url = 'https://drive.google.com/uc?export=download&id=1_BUJULd8-MhvpxFt0FmHFERAO0aWagQR'
     link_text = 'Click here to download the presentation of the Energy Project'
-    
     # Display the download link in blue
     st.markdown(f'<a href="{download_url}" download style="color: blue;">{link_text}</a>', unsafe_allow_html=True)
 
