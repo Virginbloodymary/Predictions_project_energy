@@ -68,10 +68,13 @@ def show_home_page():
         """
     )
 
-def show_presentation_page():
-    # Display the PDF from Google Drive in the browser
-    pdf_url = 'https://drive.google.com/file/d/1_BUJULd8-MhvpxFt0FmHFERAO0aWagQR/view'
-    st.markdown(f'# Presentation\n\n<iframe src="{pdf_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
+def show_download_link():
+    # Link to the file for downloading
+    download_url = 'https://drive.google.com/uc?export=download&id=1_BUJULd8-MhvpxFt0FmHFERAO0aWagQR'
+    link_text = 'Click here to download the presentation of the Energy Project'
+    
+    # Display the download link in blue
+    st.markdown(f'<a href="{download_url}" download style="color: blue;">{link_text}</a>', unsafe_allow_html=True)
 
 def show_authors_page():
     # Display authors and LinkedIn links
