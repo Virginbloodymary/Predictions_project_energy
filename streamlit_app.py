@@ -68,7 +68,7 @@ def show_home_page():
         """
     )
 
-def show_download_link():
+def show_presentation_page():
     # Link to the file for downloading
     download_url = 'https://drive.google.com/uc?export=download&id=1_BUJULd8-MhvpxFt0FmHFERAO0aWagQR'
     link_text = 'Click here to download the presentation of the Energy Project'
