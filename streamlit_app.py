@@ -70,7 +70,7 @@ def show_home_page():
 
 def show_presentation_page():
     # Display the PDF from Google Drive in the browser
-    pdf_url = 'https://drive.google.com/file/d/1_BUJULd8-MhvpxFt0FmHFERAO0aWagQR/preview'
+    pdf_url = 'https://drive.google.com/file/d/1_BUJULd8-MhvpxFt0FmHFERAO0aWagQR/view'
     st.markdown(f'# Presentation\n\n<iframe src="{pdf_url}" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
 def show_authors_page():
