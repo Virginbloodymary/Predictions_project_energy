@@ -6,17 +6,29 @@ predictions = pd.read_csv('predictions.csv')
 
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
-    
+
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
-    
+
     # Convert Year and Month to string if they are not
     predictions['Year'] = predictions['Year'].astype(str)
     predictions['Month'] = predictions['Month'].astype(str)
-    
+
     selected_year = st.selectbox('Select a Year', predictions[predictions['Region'] == selected_region]['Year'].unique())
     selected_month = st.selectbox('Select a Month', predictions[(predictions['Region'] == selected_region) & (predictions['Year'] == selected_year)]['Month'].unique())
-    
+
+    # Display the base map or the highlighted region map
+    if selected_region:
+        region_image_file = f"{selected_region.lower().replace(' ', '_')}_highlighted.webp"
+        try:
+            st.image(region_image_file, width=700)
+        except FileNotFoundError:
+            st.image("france_base.webp", width=700)
+            st.warning(f"No highlighted map for {selected_region} available.")
+    else:
+        st.image("france_base.webp", width=700)
+
     if st.button('Predict'):
+        
         # Retrieve the specific prediction
         specific_prediction = predictions[
             (predictions['Region'] == selected_region) &
