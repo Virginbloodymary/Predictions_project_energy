@@ -7,9 +7,24 @@ predictions = pd.read_csv('predictions.csv')
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
 
+    # Dictionary mapping regions to their respective image files
+    region_to_image_map = {
+        'Bourgogne-Franche-Comté': 'bourgogne_franche_comte_highlighted.webp',
+        'Normandie': 'normandie_highlighted.webp',
+        'Île-de-France': 'ile_de_france_highlighted.webp',
+        'Bretagne': 'bretagne_highlighted.webp',
+        'Nouvelle-Aquitaine': 'nouvelle_aquitaine_highlighted.webp',
+        'Hauts-de-France': 'hauts_de_france_highlighted.webp',
+        'Auvergne-Rhône-Alpes': 'auvergne_rhone_alpes_highlighted.webp',
+        'Grand Est': 'grand_est_highlighted.webp',
+        'Provence-Alpes-Côte d\'Azur': 'provence_alpes_cote_d_azur_highlighted.webp',
+        'Occitanie': 'occitanie_highlighted.webp',
+        'Pays de la Loire': 'pays_de_la_loire_highlighted.webp',
+        'Centre-Val de Loire': 'centre_val_de_loire_highlighted.webp',
+    }
+
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
 
-    # Convert Year and Month to string if they are not
     predictions['Year'] = predictions['Year'].astype(str)
     predictions['Month'] = predictions['Month'].astype(str)
 
@@ -18,13 +33,12 @@ def show_machine_learning_page():
 
     # Display the base map or the highlighted region map
     if selected_region:
-        region_image_file = f"{selected_region.lower().replace(' ', '_')}_highlighted.webp"
-        try:
-            st.image(region_image_file, width=700)
-        except FileNotFoundError:
-            st.image("france_base.webp", width=700)
-            st.warning(f"No highlighted map for {selected_region} available.")
+        # Convert the selected region to the format used in the image filenames
+        region_key = selected_region.lower().replace(' ', '_')
+        region_image_file = region_to_image_map.get(region_key, "france_base.webp")
+        st.image(region_image_file, width=700)
     else:
+        # Display the base map before any selection is made
         st.image("france_base.webp", width=700)
 
     if st.button('Predict'):
