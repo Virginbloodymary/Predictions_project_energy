@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-# Load your predictions data
+# Load the predictions CSV
 predictions = pd.read_csv('predictions.csv')
 
 def show_machine_learning_page():
@@ -9,18 +9,18 @@ def show_machine_learning_page():
 
     # Dictionary mapping regions to their respective image files
     region_to_image_map = {
-        'Bourgogne-Franche-Comté': 'https://raw.githubusercontent.com/your_username/your_repository/main/bourgogne_franche_comte_highlighted.webp',
-        'Normandie': 'https://raw.githubusercontent.com/your_username/your_repository/main/normandie_highlighted.webp',
-        'Île-de-France': 'https://raw.githubusercontent.com/your_username/your_repository/main/ile_de_france_highlighted.webp',
-        'Bretagne': 'https://raw.githubusercontent.com/your_username/your_repository/main/bretagne_highlighted.webp',
-        'Nouvelle-Aquitaine': 'https://raw.githubusercontent.com/your_username/your_repository/main/nouvelle_aquitaine_highlighted.webp',
-        'Hauts-de-France': 'https://raw.githubusercontent.com/your_username/your_repository/main/hauts_de_france_highlighted.webp',
-        'Auvergne-Rhône-Alpes': 'https://raw.githubusercontent.com/your_username/your_repository/main/auvergne_rhone_alpes_highlighted.webp',
-        'Grand Est': 'https://raw.githubusercontent.com/your_username/your_repository/main/grand_est_highlighted.webp',
-        'Provence-Alpes-Côte d\'Azur': 'https://raw.githubusercontent.com/your_username/your_repository/main/provence_alpes_cote_d_azur_highlighted.webp',
-        'Occitanie': 'https://raw.githubusercontent.com/your_username/your_repository/main/occitanie_highlighted.webp',
-        'Pays de la Loire': 'https://raw.githubusercontent.com/your_username/your_repository/main/pays_de_la_loire_highlighted.webp',
-        'Centre-Val de Loire': 'https://raw.githubusercontent.com/your_username/your_repository/main/centre_val_de_loire_highlighted.webp',
+        'Bourgogne-Franche-Comté': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/bourgogne_franche_comte_highlighted.webp',
+        'Normandie': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/normandie_highlighted.webp',
+        'Île-de-France': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/ile_de_france_highlighted.webp',
+        'Bretagne': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/bretagne_highlighted.webp',
+        'Nouvelle-Aquitaine': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/nouvelle_aquitaine_highlighted.webp',
+        'Hauts-de-France': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/hauts_de_france_highlighted.webp',
+        'Auvergne-Rhône-Alpes': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/auvergne_rhone_alpes_highlighted.webp',
+        'Grand Est': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/grand_est_highlighted.webp',
+        'Provence-Alpes-Côte d\'Azur': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/provence_alpes_cote_d_azur_highlighted.webp',
+        'Occitanie': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/occitanie_highlighted.webp',
+        'Pays de la Loire': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/pays_de_la_loire_highlighted.webp',
+        'Centre-Val de Loire': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/centre_val_de_loire_highlighted.webp',
     }
 
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
@@ -32,13 +32,14 @@ def show_machine_learning_page():
     selected_month = st.selectbox('Select a Month', predictions[(predictions['Region'] == selected_region) & (predictions['Year'] == selected_year)]['Month'].unique())
 
     # Display the highlighted region map
-    region_image_url = region_to_image_map.get(selected_region)  # Use the full name directly
+    region_image_url = region_to_image_map.get(selected_region)
 
     if region_image_url:
-        st.image(region_image_url, width=500)  # Adjusted width to a smaller size
+        st.image(region_image_url, width=500)
     else:
         st.error(f"No highlighted map for {selected_region} available.")
 
+    
     if st.button('Predict'):
         # Retrieve the specific prediction
         specific_prediction = predictions[
