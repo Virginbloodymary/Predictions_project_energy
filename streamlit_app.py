@@ -35,13 +35,10 @@ def show_machine_learning_page():
     # Display the highlighted region map
     region_image_url = region_to_image_map.get(selected_region)
 
-    # Debug: Print the URL to the console
-    st.write(f"URL for region {selected_region}: {region_image_url}")
-
     if region_image_url:
         # Debug: Confirm that this branch is being reached
         st.write("Attempting to display image:")
-        st.image(region_image_url, width=500)
+        st.image(region_image_url, width=200)
     else:
         st.error(f"No highlighted map for {selected_region} available.")
 
