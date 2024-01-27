@@ -37,11 +37,7 @@ def show_machine_learning_page():
 
     # Debug: Print the URL to the console
     st.write(f"URL for region {selected_region}: {region_image_url}")
-
-    if region_image_url:
-        # Debug: Print the URL to the console
-    st.write(f"URL for region {selected_region}: {region_image_url}")
-
+    
     if region_image_url:
         # Debug: Confirm that this branch is being reached
         st.write("Attempting to display image:")
