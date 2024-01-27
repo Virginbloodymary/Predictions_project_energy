@@ -41,7 +41,7 @@ def show_machine_learning_page():
     if region_image_url:
         # Debug: Confirm that this branch is being reached
         st.write("Attempting to display image:")
-        st.image(region_image_url, width=300)
+        st.image(region_image_url, width=150)
     else:
         st.error(f"No highlighted map for {selected_region} available.")
 
