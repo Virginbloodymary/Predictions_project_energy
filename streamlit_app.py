@@ -1,30 +1,29 @@
 import streamlit as st
 import pandas as pd
 
+# Load your predictions data
+predictions = pd.read_csv('predictions.csv')
+
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
 
     # Dictionary mapping regions to their respective image files
     region_to_image_map = {
-    'Bourgogne-Franche-Comté': 'https://raw.githubusercontent.com/your_username/your_repository/main/bourgogne_franche_comte_highlighted.webp',
-    'Normandie': 'https://raw.githubusercontent.com/your_username/your_repository/main/normandie_highlighted.webp',
-    'Île-de-France': 'https://raw.githubusercontent.com/your_username/your_repository/main/ile_de_france_highlighted.webp',
-    'Bretagne': 'https://raw.githubusercontent.com/your_username/your_repository/main/bretagne_highlighted.webp',
-    'Nouvelle-Aquitaine': 'https://raw.githubusercontent.com/your_username/your_repository/main/nouvelle_aquitaine_highlighted.webp',
-    'Hauts-de-France': 'https://raw.githubusercontent.com/your_username/your_repository/main/hauts_de_france_highlighted.webp',
-    'Auvergne-Rhône-Alpes': 'https://raw.githubusercontent.com/your_username/your_repository/main/auvergne_rhone_alpes_highlighted.webp',
-    'Grand Est': 'https://raw.githubusercontent.com/your_username/your_repository/main/grand_est_highlighted.webp',
-    'Provence-Alpes-Côte d\'Azur': 'https://raw.githubusercontent.com/your_username/your_repository/main/provence_alpes_cote_d_azur_highlighted.webp',
-    'Occitanie': 'https://raw.githubusercontent.com/your_username/your_repository/main/occitanie_highlighted.webp',
-    'Pays de la Loire': 'https://raw.githubusercontent.com/your_username/your_repository/main/pays_de_la_loire_highlighted.webp',
-    'Centre-Val de Loire': 'https://raw.githubusercontent.com/your_username/your_repository/main/centre_val_de_loire_highlighted.webp',
-}
-
+        'Bourgogne-Franche-Comté': 'https://raw.githubusercontent.com/your_username/your_repository/main/bourgogne_franche_comte_highlighted.webp',
+        'Normandie': 'https://raw.githubusercontent.com/your_username/your_repository/main/normandie_highlighted.webp',
+        'Île-de-France': 'https://raw.githubusercontent.com/your_username/your_repository/main/ile_de_france_highlighted.webp',
+        'Bretagne': 'https://raw.githubusercontent.com/your_username/your_repository/main/bretagne_highlighted.webp',
+        'Nouvelle-Aquitaine': 'https://raw.githubusercontent.com/your_username/your_repository/main/nouvelle_aquitaine_highlighted.webp',
+        'Hauts-de-France': 'https://raw.githubusercontent.com/your_username/your_repository/main/hauts_de_france_highlighted.webp',
+        'Auvergne-Rhône-Alpes': 'https://raw.githubusercontent.com/your_username/your_repository/main/auvergne_rhone_alpes_highlighted.webp',
+        'Grand Est': 'https://raw.githubusercontent.com/your_username/your_repository/main/grand_est_highlighted.webp',
+        'Provence-Alpes-Côte d\'Azur': 'https://raw.githubusercontent.com/your_username/your_repository/main/provence_alpes_cote_d_azur_highlighted.webp',
+        'Occitanie': 'https://raw.githubusercontent.com/your_username/your_repository/main/occitanie_highlighted.webp',
+        'Pays de la Loire': 'https://raw.githubusercontent.com/your_username/your_repository/main/pays_de_la_loire_highlighted.webp',
+        'Centre-Val de Loire': 'https://raw.githubusercontent.com/your_username/your_repository/main/centre_val_de_loire_highlighted.webp',
+    }
 
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
-
-    # Debug: Print the selected region
-    st.write(f"Selected Region: {selected_region}")
 
     predictions['Year'] = predictions['Year'].astype(str)
     predictions['Month'] = predictions['Month'].astype(str)
@@ -32,45 +31,41 @@ def show_machine_learning_page():
     selected_year = st.selectbox('Select a Year', predictions[predictions['Region'] == selected_region]['Year'].unique())
     selected_month = st.selectbox('Select a Month', predictions[(predictions['Region'] == selected_region) & (predictions['Year'] == selected_year)]['Month'].unique())
 
-    # Inside your show_machine_learning_page function
     # Display the highlighted region map
-    region_key = selected_region.lower().replace(' ', '_')
-    region_image_url = region_to_image_map.get(selected_region)  # Directly use the full name
+    region_image_url = region_to_image_map.get(selected_region)  # Use the full name directly
 
-    # Debug: Print the file URL
-    st.write(f"Attempting to display image from URL: {region_image_url}")
-    
     if region_image_url:
         st.image(region_image_url, width=500)  # Adjusted width to a smaller size
     else:
         st.error(f"No highlighted map for {selected_region} available.")
-        if st.button('Predict'):
-        
-        
-        
+
+    if st.button('Predict'):
         # Retrieve the specific prediction
         specific_prediction = predictions[
             (predictions['Region'] == selected_region) &
             (predictions['Year'] == selected_year) &
             (predictions['Month'] == selected_month)
         ]
-        
+
         if not specific_prediction.empty:
             avg_prediction = specific_prediction['AveragePrediction'].values[0]
-            
             # Displaying the prediction method
             st.markdown('**Prediction made using pre-calculated data:**')
             st.markdown(f'<h2 style="font-weight:bold; color:blue;">Average Predicted Energy Consumption for {selected_region} in {selected_year} for the Month {selected_month} (MW):</h2>', unsafe_allow_html=True)
             st.markdown(f'<h1 style="font-weight:bold; color:#FF4B4B;">{avg_prediction:.2f}</h1>', unsafe_allow_html=True)
-            
+
             # Additional contextual information
-            # Check if the prediction is for future dates
             if pd.to_datetime(f'{selected_year}-{selected_month}-01') > pd.to_datetime('2022-05-01'):
                 st.write("Please note: The prediction for the selected period is based on projected trends, as the dataset available for analysis extends only up to May 2022. While this forecast is grounded in historical data patterns, it should be considered a reasoned estimate rather than a definitive figure.")
             else:
                 st.write(f'Based on actual data points from {selected_year} in the Month {selected_month}.')
         else:
             st.error('No prediction data available for the selected combination of region, year, and month.')
+
+# ... Rest of your functions ...
+
+# Rest of your code for setting up pages and sidebar navigation
+
 
 def show_home_page():
     # Display the logo and introduction text
