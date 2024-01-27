@@ -1,3 +1,6 @@
+import streamlit as st
+import pandas as pd
+
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
 
