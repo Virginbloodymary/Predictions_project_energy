@@ -42,7 +42,7 @@ def show_machine_learning_page():
         # Debug: Confirm that this branch is being reached
         st.write("Attempting to display image:")
         st.markdown(
-        f'<style>img width: 150px; height: auto;</style>',
+        f'<style>img width: 75px; height: auto;</style>',
         unsafe_allow_html=True
         )
     else:
