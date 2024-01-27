@@ -1,9 +1,3 @@
-import streamlit as st
-import pandas as pd
-
-# Load the predictions CSV
-predictions = pd.read_csv('predictions.csv')
-
 def show_machine_learning_page():
     st.title('Machine Learning Predictions')
 
@@ -31,17 +25,17 @@ def show_machine_learning_page():
     selected_year = st.selectbox('Select a Year', predictions[predictions['Region'] == selected_region]['Year'].unique())
     selected_month = st.selectbox('Select a Month', predictions[(predictions['Region'] == selected_region) & (predictions['Year'] == selected_year)]['Month'].unique())
 
-    # Display the base map or the highlighted region map
-    if selected_region:
-        # Convert the selected region to the format used in the image filenames
-        region_key = selected_region.lower().replace(' ', '_')
-        region_image_file = region_to_image_map.get(region_key, "france_base.webp")
-        st.image(region_image_file, width=700)
+    # Display the highlighted region map
+    region_key = selected_region.lower().replace(' ', '_')
+    region_image_file = region_to_image_map.get(region_key)
+    if region_image_file:
+        st.image(region_image_file, width=500)  # Adjusted width to a smaller size
     else:
-        # Display the base map before any selection is made
-        st.image("france_base.webp", width=700)
+        st.error(f"No highlighted map for {selected_region} available.")
 
     if st.button('Predict'):
+        
+        
         
         # Retrieve the specific prediction
         specific_prediction = predictions[
