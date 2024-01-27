@@ -35,7 +35,7 @@ def show_machine_learning_page():
     region_image_url = region_to_image_map.get(selected_region)
 
     if region_image_url:
-        st.image(region_image_url, width=150)
+        st.image(region_image_url, width=200)
     else:
         st.error(f"No highlighted map for {selected_region} available.")
 
