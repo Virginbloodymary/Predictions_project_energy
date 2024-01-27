@@ -39,12 +39,13 @@ def show_machine_learning_page():
     st.write(f"URL for region {selected_region}: {region_image_url}")
 
     if region_image_url:
+        # Debug: Print the URL to the console
+    st.write(f"URL for region {selected_region}: {region_image_url}")
+
+    if region_image_url:
         # Debug: Confirm that this branch is being reached
         st.write("Attempting to display image:")
-        st.markdown(
-        f'<style>img width: 50px; height: auto;</style>',
-        unsafe_allow_html=True
-        )
+        st.image(region_image_url, width=150)
     else:
         st.error(f"No highlighted map for {selected_region} available.")
 
