@@ -9,18 +9,7 @@ def show_machine_learning_page():
 
     # Dictionary mapping regions to their respective image files
     region_to_image_map = {
-        'Bourgogne-Franche-Comté': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/bourgogne_franche_comte_highlighted.webp',
-        'Normandie': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/normandie_highlighted.webp',
-        'Île-de-France': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/ile_de_france_highlighted.webp',
-        'Bretagne': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/bretagne_highlighted.webp',
-        'Nouvelle-Aquitaine': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/nouvelle_aquitaine_highlighted.webp',
-        'Hauts-de-France': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/hauts_de_france_highlighted.webp',
-        'Auvergne-Rhône-Alpes': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/auvergne_rhone_alpes_highlighted.webp',
-        'Grand Est': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/grand_est_highlighted.webp',
-        'Provence-Alpes-Côte d\'Azur': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/provence_alpes_cote_d_azur_highlighted.webp',
-        'Occitanie': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/occitanie_highlighted.webp',
-        'Pays de la Loire': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/pays_de_la_loire_highlighted.webp',
-        'Centre-Val de Loire': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/centre_val_de_loire_highlighted.webp',
+        # ... (your mapping here)
     }
 
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
@@ -34,12 +23,16 @@ def show_machine_learning_page():
     # Display the highlighted region map
     region_image_url = region_to_image_map.get(selected_region)
 
+    # Debug: Print the URL to the console
+    st.write(f"URL for region {selected_region}: {region_image_url}")
+
     if region_image_url:
+        # Debug: Confirm that this branch is being reached
+        st.write("Attempting to display image:")
         st.image(region_image_url, width=500)
     else:
         st.error(f"No highlighted map for {selected_region} available.")
 
-    
     if st.button('Predict'):
         # Retrieve the specific prediction
         specific_prediction = predictions[
