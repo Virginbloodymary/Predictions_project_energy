@@ -23,7 +23,6 @@ def show_machine_learning_page():
         'Centre-Val de Loire': 'https://raw.githubusercontent.com/Virginbloodymary/Predictions_project_energy/main/centre_val_de_loire_highlighted.webp',
     }
 
-
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
 
     predictions['Year'] = predictions['Year'].astype(str)
