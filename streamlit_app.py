@@ -19,6 +19,9 @@ def show_machine_learning_page():
 
     selected_region = st.selectbox('Select a Region', predictions['Region'].unique())
 
+    # Debug: Print the selected region
+    st.write(f"Selected Region: {selected_region}")
+
     predictions['Year'] = predictions['Year'].astype(str)
     predictions['Month'] = predictions['Month'].astype(str)
 
@@ -28,6 +31,10 @@ def show_machine_learning_page():
     # Display the highlighted region map
     region_key = selected_region.lower().replace(' ', '_')
     region_image_file = region_to_image_map.get(region_key)
+
+    # Debug: Print the file path
+    st.write(f"Attempting to display image: {region_image_file}")
+
     if region_image_file:
         st.image(region_image_file, width=500)  # Adjusted width to a smaller size
     else:
